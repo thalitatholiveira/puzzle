@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComponentsComponent } from './components/components.component';
-import { PuzzleCardComponent } from './puzzle-card/puzzle-card.component';
-import { PuzzlePlaceholderComponent } from './puzzle-placeholder/puzzle-placeholder.component';
+import { PuzzleCardComponent } from './components/puzzle-card/puzzle-card.component';
+import { PuzzlePlaceholderComponent } from './components/puzzle-placeholder/puzzle-placeholder.component';
 import { PuzzlesComponent } from './puzzles/puzzles.component';
 import { HomeComponent } from './home/home.component';
 

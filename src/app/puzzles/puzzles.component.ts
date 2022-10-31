@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PuzzlesComponent implements OnInit {
 
+  show: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggle() {
+    this.show = false;
+  }
 }

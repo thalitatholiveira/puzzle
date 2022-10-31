@@ -1,1 +1,37 @@
-<p>puzzles works!</p>
+<div class="full-screen">
+  <div class="d-flex-column" *ngIf="show">
+    <h1 style="font-size: 4em;">🎲</h1>
+    <br>
+    <h3>Seja bem-vindo ao seu desafio!</h3>
+    <br>
+    <p class="w-50 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus earum facere fuga ullam, officia maxime, consequuntur id reprehenderit nesciunt aut sequi deserunt inventore! Impedit, minus a dolor necessitatibus non nihil?</p>
+    <br>
+    <button type="button" class="btn btn-dark" (click)="toggle()">Iniciar</button>
+    <br>
+  </div>
+
+  <div class="d-flex justify-content-evenly w-100" *ngIf="!show">
+    <app-puzzle-card
+    [image]="'../../assets/interrogacao.png'"
+    [title]="'Card 1'"
+    [description]="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequuntur aperiam perferendis.'"
+    ></app-puzzle-card>
+
+    <app-puzzle-card
+    *ngIf="false"
+    [image]="'../../assets/interrogacao2.png'"
+    [title]="'Card 2'"
+    [description]="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequuntur aperiam perferendis.'"
+    ></app-puzzle-card>
+    <app-puzzle-placeholder *ngIf="true"></app-puzzle-placeholder>
+
+    <app-puzzle-card
+    *ngIf="false"
+    [image]="'../../assets/interrogacao3.png'"
+    [title]="'Card 3'"
+    [description]="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequuntur aperiam perferendis.'"
+    ></app-puzzle-card>
+    <app-puzzle-placeholder *ngIf="true"></app-puzzle-placeholder>
+  </div>
+</div>
+

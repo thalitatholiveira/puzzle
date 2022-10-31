@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-puzzle-card',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./puzzle-card.component.scss']
 })
 export class PuzzleCardComponent implements OnInit {
+
+  @Input() image: string = '';
+  @Input() title: string = 'O que é, o que é...';
+  @Input() description: string = 'Some quick example text to build on the card title and make up the bulk of the cards content.';
 
   constructor() { }
 
