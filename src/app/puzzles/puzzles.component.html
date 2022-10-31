@@ -1,0 +1,27 @@
+<div class="full-screen">
+  <div class="d-flex justify-content-evenly w-100">
+    <app-puzzle-card
+    [image]="'../../assets/interrogacao.png'"
+    [title]="'Card 1'"
+    [description]="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequuntur aperiam perferendis.'"
+    [rightAnswer]="'teste1'"
+    (isCorrect)="cardOneIsCorrect = $event"
+    ></app-puzzle-card>
+
+    <app-puzzle-card
+    *ngIf="cardOneIsCorrect"
+    [image]="'../../assets/interrogacao2.png'"
+    [title]="'Card 2'"
+    [description]="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequuntur aperiam perferendis.'"
+    ></app-puzzle-card>
+    <app-puzzle-placeholder *ngIf="!cardOneIsCorrect"></app-puzzle-placeholder>
+
+    <app-puzzle-card
+    *ngIf="false"
+    [image]="'../../assets/interrogacao3.png'"
+    [title]="'Card 3'"
+    [description]="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequuntur aperiam perferendis.'"
+    ></app-puzzle-card>
+    <app-puzzle-placeholder *ngIf="true"></app-puzzle-placeholder>
+  </div>
+</div>

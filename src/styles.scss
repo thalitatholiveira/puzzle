@@ -1,4 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-
-/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~bootstrap/scss/bootstrap';
+
+
+.full-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-pic {
+  max-width: 250px;
+  max-height: 200px;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
