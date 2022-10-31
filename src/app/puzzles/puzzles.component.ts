@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PuzzlesComponent implements OnInit {
 
   show: boolean = true;
+  public cardOneIsCorrect: boolean = false;
 
   constructor() { }
 

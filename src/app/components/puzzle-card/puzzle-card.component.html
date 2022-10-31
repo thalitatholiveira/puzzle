@@ -11,9 +11,9 @@
       aria-label="Sizing example input"
       aria-describedby="inputGroup-sizing-default"
       placeholder="Digite sua resposta aqui..."
-      >
+      [(ngModel)]="userAnswer">
     </div>
 
-    <a class="btn btn-outline-dark d-flex-column">Enviar</a>
+    <button class="btn btn-outline-dark d-flex-column" (click)="onSubmit()">Enviar</button>
   </div>
 </div>
